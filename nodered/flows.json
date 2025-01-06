@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "type": "mqtt in",
+        "name": "MQTT Logs",
+        "topic": "logs/+/summary",
+        "broker": "mqtt-broker",
+        "x": 120,
+        "y": 80,
+        "wires": [["2"]]
+    },
+    {
+        "id": "2",
+        "type": "debug",
+        "name": "Log Data",
+        "active": true
+    }
+]
